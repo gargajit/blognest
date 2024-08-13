@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+<div class="greetings">
+    <% if (locals.author) { %>
+    <h1>Welcome <%= author %>!</h1>
+    <% } else { %>
+    <h1>Welcome!</h1>
+    <% } %>
+    <div class="home_btns">
+        <form action="/create" method="post">
+            <button id="createPost">Create Post</button>
+        </form>
+        <form action="/view" method="post">
+            <button id="viewPost">View Post</button>
+        </form>     
+    </div>
+
+</div>
+
+
+<%- include("partials/footer.ejs") %>

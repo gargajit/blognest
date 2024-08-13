@@ -1,0 +1,71 @@
+main {
+    background-color: rgba(190, 190, 167, 0.148);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formLabel {
+    font-weight: bold;
+    font-size:x-large;
+    color:#676711;
+}
+
+.formInput {
+    border: 3px solid #acaca5;
+    border-radius: 5px;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+.greetings > h1 {
+    color:#676711;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px 0;
+}
+
+.btn {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 15px;
+    letter-spacing: 1px;
+    border: 2px solid #acaca5;
+    border-radius: 10px;
+    background-color: #f5f5dcc3;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px rgba(191, 191, 157, 0.637);
+    margin-left: 12px;
+    width: auto;
+    font-size: 1.1em;
+    font-weight: 600;
+
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 18px;
+    letter-spacing: 1px;
+    border: 3px solid beige;
+    border-radius: 10px;
+    background-color: #f5f5dcc3;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 4px rgba(191, 191, 157, 0.637);
+    margin-top: 20px;
+    width: auto;
+    font-size: 1em;
+}
+
+.home_btns {
+    display: flex;
+    gap: 25px;
+}
+
+.create_form > form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}

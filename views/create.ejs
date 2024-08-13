@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+
+<div class="create_form">
+    <form action="/home" method="POST">
+        <!-- <label for="blogTitle" class="formLabel">Title </label> <br> -->
+        <input type="text" name="blogTitle" id="blogTitle" placeholder="Title" class="blog blog-title"> <br>
+        <div>
+            <p>
+                <%= author %>, <%= currentDate %>
+            </p>
+        </div>
+        <input type="text" name="blogTitle" id="blogTitle" placeholder="Body" class="blog blog-title">
+        <input type="submit" value="Submit" class="btn">
+    </form>
+</div>
+
+<%- include("partials/footer.ejs") %>
