@@ -1,5 +1,9 @@
 main {
     background-color: rgba(190, 190, 167, 0.148);
+    
+}
+
+.main_index, .main_home, .main_create {
     margin: 0;
     height: 100vh;
     display: flex;
@@ -20,6 +24,7 @@ main {
     font-weight: bold;
 }
 
+
 .greetings > h1 {
     color:#676711;
     display: flex;
@@ -37,12 +42,12 @@ main {
     cursor: pointer;
     text-transform: uppercase;
     box-shadow: 2px 2px 4px rgba(191, 191, 157, 0.637);
-    margin-left: 12px;
+    margin: 12px;
     width: auto;
     font-size: 1.1em;
     font-weight: 600;
-
 }
+
 
 button {
     font-family: Arial, Helvetica, sans-serif;
@@ -64,8 +69,62 @@ button {
     gap: 25px;
 }
 
+.create_form {
+    width: 90%; /* Full width for the form container */
+}
+
 .create_form > form {
     display: flex;
     flex-direction: column;
-    width: auto;
+    align-items: center;
+    width: 100%;
+}
+
+.create_heading {
+    margin-bottom: 0;
+    margin-left: 5rem;
+    padding-top: 1rem;
+    
+}
+
+.create_blog_title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%; /* Takes 90% of the width of the page */
+    margin: 10px auto; /* Centers the input and adds some vertical margin */
+    height: 3rem; /* Ensures the title takes up one line height */
+    padding: 10px; /* Adds padding inside the input field */
+    font-size: 1.2em; /* Increases the font size */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+}
+
+.author_details {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    align-self: flex-start;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.create_blog_body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%; /* Takes 90% of the width of the page */
+    margin: 10px auto; /* Centers the input and adds some vertical margin */
+    height: 60vh; /* Takes up 60% of the viewport height */
+    padding: 10px; /* Adds padding inside the input field */
+    font-size: 1.2em; /* Sets a consistent font size */
+    box-sizing: border-box; /* Ensures padding is included in width/height */
+    resize: none; /* Prevents resizing by the user */
+    overflow-y: auto; /* Allows scrolling if content exceeds height */
+}
+
+.create_form_btn {
+    width: 100%; /* Takes 90% of the width of the page */
+    margin: 20px auto; /* Centers the button and adds some vertical margin */
+    padding: 10px 0; /* Adds padding to make the button taller */
+    font-size: 1.2em; /* Increases the font size */
+    text-align: center;  /* Centers the button text */
+    cursor: pointer;
+    background-color: #f5f5dcc3;
+    border: 2px solid #acaca5;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(191, 191, 157, 0.637);
 }

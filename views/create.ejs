@@ -1,17 +1,18 @@
 <%- include("partials/header.ejs") %>
 
-<div class="create_form">
-    <form action="/home" method="POST">
-        <!-- <label for="blogTitle" class="formLabel">Title </label> <br> -->
-        <input type="text" name="blogTitle" id="blogTitle" placeholder="Title" class="blog blog-title"> <br>
-        <div>
-            <p>
+<h1 class="create_heading">New Post</h1>
+<div class="main_create">
+    <div class="create_form">
+        <form action="/view" method="POST">
+            <!-- <label for="blogTitle" class="formLabel">Title </label> <br> -->
+            <input type="text" name="createBlogTitle" id="createBlogTitle" placeholder="Title" class="blog create_blog_title"> <br>
+            <p class="author_details">
                 <%= author %>, <%= currentDate %>
             </p>
-        </div>
-        <input type="text" name="blogTitle" id="blogTitle" placeholder="Body" class="blog blog-title">
-        <input type="submit" value="Submit" class="btn">
-    </form>
+            <textarea type="text" name="creteBlogBody" id="createBlogBody" placeholder="Body" class="blog create_blog_body"></textarea>
+            <input type="submit" value="Submit" class="btn create_form_btn">
+        </form>
+    </div>
 </div>
 
 <%- include("partials/footer.ejs") %>

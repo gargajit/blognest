@@ -1,11 +1,13 @@
 <%- include("partials/header.ejs") %>
 
-<div class="main_form">
-    <form action="/home" method="POST">
-        <label for="auth" class="formLabel">Enter Your Name: </label>
-        <input type="text" name="auth" id="auth" class="formInput">
-        <input type="submit" value="Go" class="btn">
-    </form>
+<div class="main_index">
+    <div class="main_form">
+        <form action="/home" method="POST">
+            <label for="auth" class="formLabel">Enter Your Name: </label>
+            <input type="text" name="auth" id="auth" class="formInput">
+            <input type="submit" value="Go" class="btn">
+        </form>
+    </div>
 </div>
 
 <%- include("partials/footer.ejs") %>
