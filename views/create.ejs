@@ -3,13 +3,16 @@
 <h1 class="create_heading">New Post</h1>
 <div class="main_create">
     <div class="create_form">
-        <form action="/view" method="POST">
+        <form action="/blog-<%= id %>" method="POST">
             <!-- <label for="blogTitle" class="formLabel">Title </label> <br> -->
             <input type="text" name="createBlogTitle" id="createBlogTitle" placeholder="Title" class="blog create_blog_title"> <br>
             <p class="author_details">
                 <%= author %>, <%= currentDate %>
             </p>
-            <textarea type="text" name="creteBlogBody" id="createBlogBody" placeholder="Body" class="blog create_blog_body"></textarea>
+            <textarea type="text" name="createBlogBody" id="createBlogBody" placeholder="Body" class="blog create_blog_body"></textarea>
+            <input type="submit" value="Submit" class="btn create_form_btn">
+            <input type="hidden" name="author" value="<%= author %>">
+            <input type="hidden" name="currentDate" value="<%= currentDate %>">
             <input type="submit" value="Submit" class="btn create_form_btn">
         </form>
     </div>
